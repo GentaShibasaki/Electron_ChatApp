@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import { HashRouter, Switch, Route, Link } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Login from "./Login";
 import Signup from "./Signup";
 import Rooms from "./Rooms";

@@ -38,9 +38,9 @@ export default function Signup() {
   }
 
   function handleOnSubmit(e) {
+    e.preventDefault();
     let isValid = true;
     const errorsArray = [];
-    e.preventDefault();
 
     if (!email.length) {
       isValid = false;

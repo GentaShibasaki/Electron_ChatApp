@@ -24,7 +24,7 @@ yarn build
 yarn start
 ```
 
-### references
+# References
 
 ・Electron official page - https://www.electronjs.org/
 5 Reasons Why You Should Build Electron Desktop App - https://brainhub.eu/blog/electron-desktop-app/

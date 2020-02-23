@@ -16,6 +16,7 @@ export default function NewMessage(props) {
   }
 
   function handleOnSubmit(e) {
+    e.preventDefault();
     if (!onMessagePost || message.length === 0) {
       return;
     }

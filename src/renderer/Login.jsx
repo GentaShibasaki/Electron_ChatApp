@@ -5,6 +5,7 @@ import * as firebase from "firebase/app";
 
 // Add the Firebase services that you want to use
 import "firebase/auth";
+import "firebase/database";
 
 // Your web app's Firebase configuration
 
@@ -74,7 +75,6 @@ export default function Login() {
           onChange={handleOnChangeEmail}
           value={email}
         />
-        <div>{email}</div>
       </div>
 
       <div className="form-group">
@@ -86,7 +86,6 @@ export default function Login() {
           onChange={handleOnChangePassword}
           value={password}
         />
-        <div>{password}</div>
       </div>
 
       <div className="form-group">

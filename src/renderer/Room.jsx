@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import * as firebase from "firebase/app";
 // Add the Firebase services that you want to use
 import "firebase/database";
+import "firebase/auth";
 
 import Message from "./Message";
 import NewMessage from "./NewMessage";
@@ -19,6 +20,7 @@ export default function Room() {
 
   useEffect(() => {
     fetchRoom(roomId);
+    setUser(firebase.auth().currentUser);
   }, [roomId]);
 
   useEffect(() => {
@@ -30,7 +32,6 @@ export default function Room() {
       .ref("/chatrooms/" + roomId)
       .child("messages")
       .push();
-    setUser(firebase.auth().currentUser);
     newItemRef.update({
       writtenBy: {
         uid: user.uid,
