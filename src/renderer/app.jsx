@@ -11,14 +11,14 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 
 let firebaseConfig = {
-  apiKey: "AIzaSyBaLwlZm-5rREQ9x7FQLtgpjnMsYOz7gS0",
-  authDomain: "electron-85b81.firebaseapp.com",
-  databaseURL: "https://electron-85b81.firebaseio.com",
-  projectId: "electron-85b81",
-  storageBucket: "electron-85b81.appspot.com",
-  messagingSenderId: "558321993080",
-  appId: "1:558321993080:web:e1f457f223cdfe4f19b48d",
-  measurementId: "G-D0H77TVTSD"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

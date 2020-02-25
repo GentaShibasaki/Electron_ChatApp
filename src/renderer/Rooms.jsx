@@ -84,7 +84,8 @@ export default function Rooms() {
       });
   }
 
-  function logout() {
+  function logout(e) {
+    // e.preventDefault();
     firebase
       .auth()
       .signOut()
