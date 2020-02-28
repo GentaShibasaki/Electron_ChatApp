@@ -8,8 +8,6 @@ https://www.amazon.co.jp/dp/B06XTKZS7J/ref=dp-kindle-redirect?_encoding=UTF8&btk
 
 # Project setup
 
-
-
 ```
 yarn
 ```
