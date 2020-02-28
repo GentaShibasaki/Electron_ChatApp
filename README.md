@@ -12,6 +12,8 @@ https://www.amazon.co.jp/dp/B06XTKZS7J/ref=dp-kindle-redirect?_encoding=UTF8&btk
 
 If you want to use this app, you have to create a firebase project. And you put your firebase configuration in ".env" file on the top layer of the folder!
 
+### Install dependencies
+
 ```
 yarn
 ```
